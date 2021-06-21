@@ -1,6 +1,6 @@
 package project;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 
 	int empNo;
 	String empName;
@@ -50,6 +50,17 @@ public class Employee {
 	public String toString() {
 		return "Employee [empNo=" + empNo + ", empName=" + empName + ", salary=" + salary + ", address=" + address
 				+ "]";
+	}
+
+	@Override
+	public int compareTo(Employee e) {
+		if(empNo == e.empNo)
+			return 0;
+		else if (empNo > e.empNo)
+			return 1;
+		else 
+			return -1;
+		
 	}
 	
 	

@@ -26,7 +26,7 @@ public class TestAssertions {
 	@Test
 	public void testChangeName() {
 		e1.setEmpName("James");
-		assertNotEquals("Sames", e1.getEmpName());
+		assertNotEquals("Charles", e1.getEmpName());
 	}
 	
 	@Test
